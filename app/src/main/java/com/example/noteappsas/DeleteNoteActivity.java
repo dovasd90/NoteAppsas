@@ -31,6 +31,7 @@ public class DeleteNoteActivity extends AppCompatActivity {
             noteManager.deleteNote(selectedNote);
             adapter.remove(selectedNote);
             adapter.notifyDataSetChanged();
+            finish();
         }
     }
 }
